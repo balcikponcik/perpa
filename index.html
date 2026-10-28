@@ -235,7 +235,7 @@ function loop(){
       if(!it.done&&it.lane===st.lane&&Math.abs(it.x-200)<38){
         it.done=true;
         if(it.kind==='food'){setPower(st.power+8);beep(880,.08,'triangle');bubble('HAM!');}
-        else if(it.kind==='woman'){bubble('MEME!');say('mimiii!',1.5,2);setPower(st.power+3);}
+        else if(it.kind==='woman'){bubble('MEME!');say('meme!',1.5,2);setPower(st.power+3);}
         else{ if(st.hit>0){it.done=false;continue;} st.hit=50;bubble('AAH!');beep(120,.3,'sawtooth');setPower(st.power-15);}
       }
     }
